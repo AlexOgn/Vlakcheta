@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.tekst {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  resize:none;
+}
+
+.kopche{
+  background-color: darkblue;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="tooltip">
+    <button class="kopche" onclick="myFunction('TOP')">
+        
+          TOP GAP
+    </button>
+</div>
+
+<div class="tooltip">
+    <button class="kopche" onclick="myFunction('JG')">
+        
+        JG GAP
+    </button>
+</div>
+
+<div class="tooltip">
+    <button class="kopche" onclick="myFunction('MID')">
+        
+        MID GAP
+    </button>
+</div>
+
+<div class="tooltip">
+    <button class="kopche" onclick="myFunction('ADC')">
+        
+        ADC GAP
+    </button>
+</div>
+
+<div class="tooltip">
+    <button class="kopche" onclick="myFunction('SUPP')">
+        
+        SUPP GAP
+    </button>
+</div>
+
+<br>
+
+<div class="tooltip">
+    <button class="kopche" onclick="myFunction('EZAF')">
+        
+        EZAF
+    </button>
+</div>
+
+<div class="tooltip">
+    <button class="kopche" onclick="myFunction('NAENAED')">
+        
+        NAENAED
+    </button>
+</div>
+
+<div class="tooltip">
+    <button class="kopche" onclick="myFunction('SWEAT')">
+        
+        SWEAT
+    </button>
+</div>
+
+<div class="tooltip">
+    <button class="kopche" onclick="myFunction('YES')">
+        
+        YES
+    </button>
+</div>
+
+<div class="tooltip">
+    <button class="kopche" onclick="myFunction('NO')">
+        
+        NO
+    </button>
+</div>
+
+
+<br>
+
+<textarea class="tekst" type="text" id="TOP" rows="15" cols="35" readonly>
+    :
+    ━━━━-╮
+    ╰┃ ┣▇━▇
+     ┃ ┃  ╰━▅╮
+     ╰┳╯ ╰━━┳╯
+      ╰╮ ┳━━╯ T O P  G A P
+     ▕▔▋ ╰╮╭━╮ 
+    ╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+    ▏  ▔▔▔▔▔▔▔  O O┃
+    ╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+     ▏╳▕▇▇▕ ▏╳▕▇▇▕
+     ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
+
+<textarea class="tekst" type="text" id="JG" rows="15" cols="35" readonly>
+    :
+    ━━━━-╮
+    ╰┃ ┣▇━▇
+     ┃ ┃  ╰━▅╮
+     ╰┳╯ ╰━━┳╯
+      ╰╮ ┳━━╯ J G  G A P
+     ▕▔▋ ╰╮╭━╮ 
+    ╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+    ▏  ▔▔▔▔▔▔▔  O O┃
+    ╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+     ▏╳▕▇▇▕ ▏╳▕▇▇▕
+     ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
+
+<textarea class="tekst" type="text" id="MID" rows="15" cols="35" readonly>
+    :
+    ━━━━-╮
+    ╰┃ ┣▇━▇
+     ┃ ┃  ╰━▅╮
+     ╰┳╯ ╰━━┳╯
+      ╰╮ ┳━━╯ M I D  G A P
+     ▕▔▋ ╰╮╭━╮ 
+    ╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+    ▏  ▔▔▔▔▔▔▔  O O┃
+    ╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+     ▏╳▕▇▇▕ ▏╳▕▇▇▕
+     ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
+
+<textarea class="tekst" type="text" id="ADC" rows="15" cols="35" readonly>
+    :
+    ━━━━-╮
+    ╰┃ ┣▇━▇
+     ┃ ┃  ╰━▅╮
+     ╰┳╯ ╰━━┳╯
+      ╰╮ ┳━━╯ A D C  G A P
+     ▕▔▋ ╰╮╭━╮ 
+    ╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+    ▏  ▔▔▔▔▔▔▔  O O┃
+    ╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+     ▏╳▕▇▇▕ ▏╳▕▇▇▕
+     ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
+
+<textarea class="tekst" type="text" id="SUPP" rows="15" cols="35" readonly>
+    :
+    ━━━━-╮
+    ╰┃ ┣▇━▇
+     ┃ ┃  ╰━▅╮
+     ╰┳╯ ╰━━┳╯
+      ╰╮ ┳━━╯ S U P P O R T
+     ▕▔▋ ╰╮╭━╮     G A P
+    ╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+    ▏  ▔▔▔▔▔▔▔  O O┃
+    ╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+     ▏╳▕▇▇▕ ▏╳▕▇▇▕
+     ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
+
+<textarea class="tekst" type="text" id="EZAF" rows="15" cols="35" readonly>
+    :
+    ━━━━-╮
+    ╰┃ ┣▇━▇
+     ┃ ┃  ╰━▅╮
+     ╰┳╯ ╰━━┳╯E Z A F
+      ╰╮ ┳━━╯T Y 4 
+     ▕▔▋ ╰╮╭━╮ T U T O R I A L
+    ╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+    ▏  ▔▔▔▔▔▔▔  O O┃
+    ╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+     ▏╳▕▇▇▕ ▏╳▕▇▇▕
+     ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
+
+<textarea class="tekst" type="text" id="NAENAED" rows="15" cols="35" readonly>
+    :
+    ━━━━-╮
+    ╰┃ ┣▇━▇
+     ┃ ┃  ╰━▅╮
+     ╰┳╯ ╰━━┳╯ G E T 
+      ╰╮ ┳━━╯      N A E N A E D 
+     ▕▔▋ ╰╮╭━╮ 
+    ╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+    ▏  ▔▔▔▔▔▔▔  O O┃
+    ╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+     ▏╳▕▇▇▕ ▏╳▕▇▇▕
+     ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
+
+<textarea class="tekst" type="text" id="SWEAT" rows="15" cols="35" readonly>
+    :
+    ━━━━-╮
+    ╰┃ ┣▇━▇
+     ┃ ┃  ╰━▅╮
+     ╰┳╯ ╰━━┳╯ D I D N ' T
+      ╰╮ ┳━━╯     S W E A T
+     ▕▔▋ ╰╮╭━╮ 
+    ╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+    ▏  ▔▔▔▔▔▔▔  O O┃
+    ╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+     ▏╳▕▇▇▕ ▏╳▕▇▇▕
+     ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
+
+<textarea class="tekst" type="text" id="YES" rows="15" cols="35" readonly>
+    :
+━━━━-╮
+╰┃ ┣▇━▇
+ ┃ ┃  ╰━▅╮
+ ╰┳╯ ╰━━┳╯
+  ╰╮ ┳━━╯  Y E S
+ ▕▔▋ ╰╮╭━╮
+╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+▏  ▔▔▔▔▔▔▔  O O┃
+╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+ ▏╳▕▇▇▕ ▏╳▕▇▇▕
+ ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
+
+<textarea class="tekst" type="text" id="NO" rows="15" cols="35" readonly>
+    :
+━━━━-╮
+╰┃ ┣▇━▇
+ ┃ ┃  ╰━▅╮
+ ╰┳╯ ╰━━┳╯
+  ╰╮ ┳━━╯  N O
+ ▕▔▋ ╰╮╭━╮
+╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+▏  ▔▔▔▔▔▔▔  O O┃
+╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+ ▏╳▕▇▇▕ ▏╳▕▇▇▕
+ ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
+
+<script>
+function myFunction(ID) {
+  var copyText = document.getElementById(ID);
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.innerHTML);
+}
+
+</script>
+</body>
+</html>
