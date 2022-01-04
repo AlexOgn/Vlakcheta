@@ -281,14 +281,38 @@
  ╲▂╱╲▂╱ ╲▂╱╲▂╱
 </textarea>
 
-<script>
-function myFunction(ID) {
-  var copyText = document.getElementById(ID);
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(copyText.innerHTML);
-}
+<br>
+<h1>TEXT TO VLAKCHE CONVERTER</h1>
+<p style="font-size:x-large;">Input:</p>
+<input type="text" id="goshko" class="tekst" placeholder="Ti si pedal" oninput="Vlakchify()"><br><br>
+<p style="font-size:x-large;">Output:</p>
+<br>
+<textarea class="tekst" type="text" id="Output" rows="15" cols="35" readonly>
+:
+━━━━-╮
+╰┃ ┣▇━▇
+ ┃ ┃  ╰━▅╮ 
+ ╰┳╯ ╰━━┳╯ 
+  ╰╮ ┳━━╯ T I  S I 
+ ▕▔▋ ╰╮╭━╮ P E D A L 
+╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+▏  ▔▔▔▔▔▔▔  O O┃
+╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+ ▏╳▕▇▇▕ ▏╳▕▇▇▕
+ ╲▂╱╲▂╱ ╲▂╱╲▂╱
+</textarea>
 
+<h5>Disclaimer: V nqkoi sluchai ne bachka ama she trqq da praq AI ako iskate da bachka tei che kys.</h5>
+
+<script src="index.js"></script>
+<script>
+    function myFunction(ID) {
+        var copyText = document.getElementById(ID);
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.innerHTML);
+    }   
 </script>
+
 </body>
 </html>
